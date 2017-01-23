@@ -4,12 +4,16 @@ namespace MMC\User\Component\User\Model;
 
 abstract class User implements UserInterface
 {
+    /**
+     * @var int
+     */
     protected $id;
 
     /**
-     * Get id.
-     *
-     * @return int
+     * {@inheritdoc}
      */
-    public function getId();
+    public function getId()
+    {
+        return $this->id;
+    }
 }
